@@ -157,7 +157,7 @@ class Ranges:
     def get_range(format_range, ref, context=None):
         ctx = (context or {}).copy()
         #KR
-        if in _re_range.match(ref) is not None:
+        if _re_range.match(ref) is not None:
             for k, v in _re_range.match(ref).groupdict().items():
                 if v is not None:
                     if k == 'ref':
