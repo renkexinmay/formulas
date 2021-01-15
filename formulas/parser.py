@@ -48,6 +48,7 @@ class Parser:
         Parenthesis('(').ast(tokens, stack, builder)
         while expr:
             #if expression != "='>> 3. Hypothèses'!#REF!":
+            print(expr)
             if expr != '#REF!':
                 for f in filters:
                     try:
