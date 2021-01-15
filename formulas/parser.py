@@ -47,8 +47,8 @@ class Parser:
         filters, tokens, stack = self.filters, [], []
         Parenthesis('(').ast(tokens, stack, builder)
         while expr:
-            if expression != "='>> 3. Hypothèses'!#REF!":
-                #if f != '#REF!'
+            #if expression != "='>> 3. Hypothèses'!#REF!":
+            if expr != '#REF!':
                 for f in filters:
                     try:
                         token = f(expr, context)
